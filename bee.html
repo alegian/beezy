@@ -1,0 +1,61 @@
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<style>
+  @keyframes bounceY {
+    from { top: 20px; } to { top: 445px; }
+  }
+  @keyframes bounceX {
+    from { left: 0; } to { left: 207px;}
+  }
+  @keyframes flipX {
+    0% {
+      transform: scaleX(1);
+    }
+    49% {
+      transform: scaleX(1);
+    }
+    50% {
+      transform: scaleX(-1);
+    }
+    99% {
+      transform: scaleX(-1);
+    }
+  }
+  
+  #background{
+    height: 500px;
+    width: 242px;
+    background: url('./bg.png') no-repeat;
+    position: relative;
+  }
+  
+  .bee{
+      width: 35px;
+      height: 35px;  
+      animation: bounceY 3.2s linear 0s infinite alternate, 
+      bounceX 0.9s linear 0s infinite alternate,
+      flipX 1.8s linear 0s infinite;
+      display: block;
+      position: absolute;
+  }
+  html{
+    background-color: #333;
+    font-family: 'Roboto', sans-serif;
+  }
+  body{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  </style>
+</head>
+<body>
+  <h1>BEEZY</h1>
+  <div id="background">
+    <img class="bee" src="./bee.png"/>
+  </div>
+</body>
