@@ -4,10 +4,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <style>
   @keyframes bounceY {
-    from { top: 20px; } to { top: 445px; }
+    from { top: 0; } to { top: 460px; }
   }
   @keyframes bounceX {
-    from { left: 0; } to { left: 207px;}
+    from { left: -10px; } to { left: 212px;}
   }
   @keyframes flipX {
     0% {
@@ -28,12 +28,13 @@
     height: 500px;
     width: 242px;
     background: url('./bg.png') no-repeat;
+    background-size:100% 100%;
     position: relative;
   }
   
   .bee{
-      width: 35px;
-      height: 35px;  
+      width: 40px;
+      height: 40px;  
       animation: bounceY 3.2s linear 0s infinite alternate, 
       bounceX 0.9s linear 0s infinite alternate,
       flipX 1.8s linear 0s infinite;
